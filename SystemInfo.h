@@ -3,7 +3,7 @@
 #include <string>
 
 
-public class Systeminfo {
+class Systeminfo {
 public:
 
     static double getCpuLoad();
