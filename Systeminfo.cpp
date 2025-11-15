@@ -6,7 +6,7 @@ using namespace std;
 
 
 double SystemInfo::getCpuLoad() {
-    ifstrem file("/proc/loadavg");
+    ifstream file("/proc/loadavg");
      double load = 0;
      file >> load;
 
@@ -14,7 +14,7 @@ double SystemInfo::getCpuLoad() {
 }
 
 double SystemInfo::getMemoryUsage() {
-    ifstrem file("/proc/meminfo");
+    ifstream file("/proc/meminfo");
     string label;
     long total = 0, free = 0;
     file >> label >> total;
